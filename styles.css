@@ -1,0 +1,124 @@
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 350px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 15px 20px -5px hsl(224, 23%, 55%);
+}
+
+.hero {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.info {
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    width: 80%;
+}
+
+.summary {
+    font-weight: 900;
+    padding: 0;
+    margin: 40px 0 15px;
+    font-size: 25px;
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 5px;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.pricing {
+    flex: 1;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.cost {
+    color: hsl(224, 23%, 55%);
+}
+
+.change {
+    text-decoration: underline solid hsl(245, 75%, 52%);
+    color: hsl(245, 75%, 52%);
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.proceed {
+    width: 70%;
+    background-color: hsl(245, 75%, 52%);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 10px 15px 3px hsl(225, 100%, 94%);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 12px;
+    margin: 20px 0 30px;
+    cursor: pointer;
+}
+
+.proceed:hover {
+    background-color: hsla(245, 75%, 52%, 0.5);
+}
+
+.change:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.5);
+}
+
+.cancel:hover {
+    color: black;
+}
+
+
